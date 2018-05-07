@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Owen Smith | Projects &amp; Experiments</title>
+
+	<link rel="stylesheet" href="/assets/style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+</head>
+<body>
+	<div class="page-nav vcard">
+		<div class="page-nav-inner">
+			<header>
+				<h1 class="title"><a class="fn url" href="https://omsmith.ca">Owen Smith</a></h1>
+
+				<ul class="contact">
+					<li>
+						<a href="https://github.com/omsmith" target="_blank" rel="noopener">
+							<span class="fab fa-github"></span>
+							<span class="offscreen">my github profile</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://bitbucket.org/omsmith" target="_blank" rel="noopener">
+							<span class="fab fa-bitbucket"></span>
+							<span class="offscreen">my bitbucket profile</span>
+						</a>
+					</li>
+					<li class="email">
+						<a href="mailto:owen@omsmith.ca">
+							<span class="fa fa-envelope"></span>
+							<span class="offscreen">owen@omsmith.ca</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://keybase.io/omsmith" target="_blank" rel="noopener">
+							<span class="fab fa-keybase"></span>
+							<span class="offscreen">my keybase profile</span>
+						</a>
+					</li>
+				</ul>
+			</header>
+
+			<nav class="nav">
+				<ul>
+					<li><a href="https://omsmith.ca">About</a></li>
+					<li><a href="https://omsmith.ca/projects-experiments">Projects</a></li>
+					<li><a href="https://omsmith.ca/resume">Resume</a></li>
+					<li><a href="https://cycling.omsmith.ca">Cycling</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	<main class="page-content ">
+		<h2>Projects &amp; Experiments</h2>
+
+		<p>Some random thought experiments and as well as some slightly larger projects; mostly things I&#39;ve worked on in my spare time while not otherwise working. In general, they are still rough around the edges, having halted development once they did what they needed.</p>
+<h3 id="orientation-leader-profiles-span-class-fab-fa-bitbucket-span-span-class-offscreen-source-span-leader-profile-source-">Orientation leader profiles <a href="https://bitbucket.org/omsmith/oweekleaderprofiles"><span class="fab fa-bitbucket"></span><span class="offscreen">(source)</span></a></h3>
+<p>A &quot;simple&quot; (read as &quot;over-engineered&quot;) profile system for math frosh week leaders at Waterloo. Two years prior to this, information was managed through a combination of memory and e-mail. The year after that, it ended up in a fairly decent excel sheet. But still, each year, the same questions were asked of the same people time and time again. Hopefully this gets rid of some of that.</p>
+<h3 id="webaudio-waveforms-span-class-fab-fa-bitbucket-span-span-class-offscreen-source-span-webaudio-source-">WebAudio waveforms <a href="https://bitbucket.org/omsmith/js-webaudio-waveforms"><span class="fab fa-bitbucket"></span><span class="offscreen">(source)</span></a></h3>
+<p><img src="/assets/webaudio.png" alt="A partial waveform created by the project"></p>
+<p>This was a quick test of the up-and-coming html5 <a href="https://www.html5rocks.com/en/tutorials/webaudio/intro/">WebAudio APIs</a> (in webkit). It clearly isn&#39;t implemented particularly well, but it did do what I set out to do. In JavaScript, a selected audio file is loaded completely into the limited memory available, and then draws a simple waveform representation of the file in canvas. It tends to crash your browser around 15MB files.</p>
+<p>Playing with this came up after reading <a href="http://www.themaninblue.com/writing/perspective/2012/09/18/">another expierment</a> from <em>The Man In Blue</em> and previously researching ways of generating waveforms for social media platforms.</p>
+<h3 id="meteor-scrum-board-span-class-fab-fa-bitbucket-span-span-class-offscreen-source-span-stm-source-">Meteor scrum board <a href="https://bitbucket.org/omsmith/meteor-stm"><span class="fab fa-bitbucket"></span><span class="offscreen">(source)</span></a></h3>
+<p><img src="/assets/stm.png" alt="The view of a sprint in stm"></p>
+<p>While I&#39;d been following <a href="https://www.meteor.com/">meteor</a> since it was initially announced, I hadn&#39;t found something I could make which would take advtantage of some of the nicities it would provide. Once they released the authentication framework, I decided to have a go. So, over a weekend, I put together a basic scrum board with points and tasks and sprints (oh my!). We&#39;d been struggling with/hating on redmine for a while at work, so putting together something which could potentially solve some of those pain points added a bit of motivation. I never finished anything, of course.</p>
+<h3 id="-abbr-title-computer-science-club-csc-abbr-point-of-sales-client-source-pos-client-source-"><abbr title="Computer Science Club">CSC</abbr> point-of-sales client <a href="https://git.csclub.uwaterloo.ca/?p=omsmith/pos-js.git;a=summary">(source)</a></h3>
+<p>Built out a web-based front-end for the POS. Submits transactions using Apache Thrift in JavaScript to a middle-man validator before hitting the backend server. Retrieves product information through cached requests to a third-party service for UPC search. Price is retrieved from the point-of-sales system. The UI was built out using Knockout.js for easy data-bound page updates.</p>
+<h3 id="orientation-leader-scheduler-span-class-fab-fa-bitbucket-span-span-class-offscreen-source-span-leader-scheduler-source-">Orientation leader scheduler <a href="https://bitbucket.org/omsmith/oweekscheduler"><span class="fab fa-bitbucket"></span><span class="offscreen">(source)</span></a></h3>
+<p>A small tool for scheduling leaders to events during frosh week. Given a set of events that were running during the week, and a set of event preferences collected from leaders in a survey, this tool spit out an assignment of shifts for each leader in text format (to be printed) as well as JSON to be displayed as a calendar. Constraints also included attendance at each event and first-aid certifications. Would warn of unsatisfied shifts and all that good jazz too.</p>
+<h3 id="orientation-website-span-class-fab-fa-bitbucket-span-span-class-offscreen-source-span-oweek-website-source-">Orientation website <a href="https://bitbucket.org/omsmith/oweekwebsite2012"><span class="fab fa-bitbucket"></span><span class="offscreen">(source)</span></a></h3>
+<p><img src="/assets/oweekwebsite2012.png" alt="Screenshot of Math Orientation 2012 website"></p>
+<p>I&#39;ve had a pretty large hand in the design and construction of the websites for math frosh week the past two years. They&#39;ve been pretty tame thus far. Moving forward, it&#39;s time to do something a bit fancier. Screw wordpress, they don&#39;t really need it. lets go static compilation. Still need to figure out a good way to help everyone transition from year to year&hellip;</p>
+<h3 id="webrtc-video-chat-span-class-fab-fa-github-span-span-class-offscreen-source-span-webrtc-source-">WebRTC video chat <a href="https://github.com/jnmacken/blinddate"><span class="fab fa-github"></span><span class="offscreen">(source)</span></a></h3>
+<p>During the hackathon at <abbr title="Canadian Undergraduate Technology Conference">CUTC</abbr> 2013 I decided to play around with some of the new-fangled WebRTC business that has come along with HTML5. Under the ruse of &quot;chatroullette&quot; for dating, we got some video chat going - trying a few different approaches at using it. Nothing fancy or new, but was still interesting to play with.</p>
+<h3 id="-abbr-title-computer-science-club-csc-abbr-point-of-sales-server-source-pos-server-source-"><abbr title="Computer Science Club">CSC</abbr> point-of-sales server <a href="https://git.csclub.uwaterloo.ca/?p=public/pos.git;a=summary">(source)</a></h3>
+<p>Contributed to some backend work on the point-of-sales system in the Computer Science Club. Makes for secure transactions against user accounts using Apache Thrift.</p>
+
+	</main>
+
+</body>
+</html>
